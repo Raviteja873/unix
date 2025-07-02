@@ -1,0 +1,16 @@
+LAB2
+ Find largest of three numbers using conditional execution
+echo -n " enter a value :"
+read a
+echo -n " enter b value :"
+read b
+echo -n " enter c value :"
+read c
+if [ $a -ge $b ] && [ $a -ge $b ]; then
+        echo "the largest no is a :$a "
+elif [ $b -ge $a ] && [ $b -ge $c ]; then
+        echo "the largest no is b :$b "
+else
+        echo "the largest no is c :$c"
+fi
+

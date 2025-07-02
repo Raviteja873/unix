@@ -1,0 +1,11 @@
+  LAB1
+1. Accept two numbers and perform all arithmetic operations
+
+read -p "Enter first number: " a
+read -p "Enter second number: " b
+
+echo "Addition: $(($a + $b))"
+echo "Subtraction: $(($a - $b))"
+echo "Multiplication: $(($a * $b))"
+echo "Division: $(($a / $b))"
+echo "Modulus: $(($a % $b))"

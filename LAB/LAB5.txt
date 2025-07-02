@@ -1,0 +1,8 @@
+count=0
+for file in /mnt/c/Users/user/Desktop/unixrt/*
+do 
+  count=$((count+1))
+done
+
+echo "dictionary contains = $count"
+read -p "enter: " p

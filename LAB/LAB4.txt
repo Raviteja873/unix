@@ -1,0 +1,4 @@
+
+
+last_user=$(whoami)
+echo "Most recently logged-in user (current session): $last_user"

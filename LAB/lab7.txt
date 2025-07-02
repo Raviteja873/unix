@@ -1,0 +1,18 @@
+echo "Enter month (MM):"
+read m
+echo "Enter year (YYYY):"
+read y
+
+m=$(echo $m | sed 's/^0*//')
+
+if [ "$m" -eq 2 ]; then
+  if (( ($y % 4 == 0 && $y % 100 != 0) || ($y % 400 == 0) )); then
+    echo "29"
+  else
+    echo "28"
+  fi
+elif [ "$m" -eq 4 ] || [ "$m" -eq 6 ] || [ "$m" -eq 9 ] || [ "$m" -eq 11 ]; then
+  echo "30"
+else
+  echo "31"
+fi
